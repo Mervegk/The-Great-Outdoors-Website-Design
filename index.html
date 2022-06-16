@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=chrome">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/5463f9f22f.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"
+        integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css"
+        integrity="sha512-nNlU0WK2QfKsuEmdcTwkeh+lhGs6uyOxuUs+n+0oXSYDok5qy0EI0lt01ZynHq6+p/tbgpZ7P+yUb+r71wqdXg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,500;0,700;1,300;1,500;1,700&family=Nunito:ital,wght@0,200;0,400;0,700;1,200;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+        integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title>Great Outdoors</title>
+</head>
+<!--font-family: 'Cormorant Garamond', serif;-->
+
+<body class="body">
+
+    <!-- HEADER -->
+    <header id="header" class="header-section header-img ">
+
+        <div class="overlay">
+
+            <!-- NAVBAR -->
+            <nav id="nav" class="navbar navbar-expand-sm d-flex justify-content-between fixed-top navbar-bg"
+                style="margin-bottom: 100px;">
+                <button class="navbar-toggler bg-light" type="button" data-toggle="collapse"
+                    data-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="container">
+                    <div class="collapse navbar-collapse " id="navbarCollapse">
+                        <ul class="navbar-nav mx-auto" style="width: 100%; justify-content: space-around;">
+                            <li class="nav-item">
+                                <a href="#header" class="nav-link text-light">ABOUT</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#explore" class="nav-link text-light">EXPLORE</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#journal" class="nav-link text-light">JOURNAL</a>
+                            </li>
+
+                            <li class="nav-item ">
+                                <div class="d-flex search-place">
+                                    <a id="search" class="nav-link" href=" #searchForm" data-target="#searchForm"
+                                        data-toggle="collapse">
+                                        <span class="fa fa-search text-light"></span>
+                                    </a>
+                                    <input id="search" type="search" name="inputPlace" class="form-control border-0"
+                                        placeholder="search" />
+
+                                </div>
+                            </li>
+                            <!-- <li class="nav-item">
+                                 <a href="#" class="nav-link text-light">SEARCH</a> 
+                                <div class="form-inline">
+                                    <div class="sm-form my-0">
+                                        <input type="text" class="form-control mr-sm-2" placeholder="SEARCH"
+                                            aria-label="Search">
+                                    </div>
+                                    <button class="btn btn-outline-secondary btn-md my-2 my-sm-0 ml-3" type="submit">
+                                        <span class="fa fa-search"></span>
+                                    </button>
+                                </div>
+                            </li> -->
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- HEADER TEXT -->
+            <div class="container" style="margin-top: 350px;">
+                <div class="row align-items-center flex-column">
+
+                    <h1 class="header-h1 mt-5">The Great Outdoors</h1>
+                    <p class="p-tag">Wander often. Wonder always</p>
+
+                </div>
+            </div>
+        </div>
+
+        <!--   <div class="overlay"></div> -->
+    </header>
+
+    <!-- EXPLORE AREA -->
+    <section id="explore" class="mt-5">
+        <div class="container text-light">
+            <div class="row align-items-center flex-column mt-2 mb-5">
+                <br>
+                <br>
+                <br>
+                <h4 class="mb-3" style="font-family: 'Nunito', sans-serif;">Explore the World </h4>
+                <center>We need to provide the most authentic content from athletes, adventurers,</center>
+                <center>explorers and travellers around the world. Our long-term mission is to educate,</center>
+                <center>inspire and enable all people to experience & protect wilderness.</center>
+            </div>
+
+
+            <!--  <div class="cont">
+                <aside class="d-flex justify-content-between">
+                    <img class="explore-img" src="./images/naeroyfjord.jpg" alt="naeroyfjord">
+                    <div class="text-image">
+                        <span>Næryfjorden</span>
+                        <br>
+                        <span>NORWAY</span>
+                    </div>
+
+                    <img class="explore-img" src="./images/antelope.jpg" alt="antelopecanyon">
+                    <div class="text-image">
+                        <span>Antelope Canyon</span>
+                        <br>
+                        <span>UNITED STATES</span>
+                    </div>
+
+                    <img class="explore-img" src="./images/grossglockner-1.jpg" alt="grossglockner">
+                </aside>
+            </div>
+        </div> -->
+
+
+            <div class="wrapper" style="text-align: center;">
+                <div class="d-flex justify-content-between align-items-end">
+                    <div class="row" style="margin: auto;">
+                        <div class="col-md-4">
+                            <div class="ty-compact-list" style="position: relative;">
+                                <a href="./images/naeroyfjord.jpg" data-caption="Næryfjorden" class="fancybox "
+                                    data-fancybox="gallery1"><img class="explore-img" src="./images/naeroyfjord.jpg"
+                                        alt="naeroyfjord"></a>
+                                <div class=" place-names-align overlayed-text">
+                                    <span>Næryfjorden</span>
+                                    <br>
+                                    <span>NORWAY</span>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="ty-compact-list" style="position: relative;">
+
+                                <a href="./images/antelope.jpg" class="fancybox" data-fancybox="gallery1"
+                                    data-caption="Antelope Canyon"><img class="explore-img" src="./images/antelope.jpg"
+                                        alt="antelopecanyon"></a>
+                                <div class="place-names-align overlayed-text">
+                                    <span>Antelope Canyon</span>
+                                    <br>
+                                    <span>UNITED STATES</span>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="ty-compact-list" style="position: relative;">
+                                <div class="item col-sm-6 col-md-4 mb-d"></div>
+                                <a href="./images/grossglockner-1.jpg" class="fancybox" data-fancybox="gallery1"
+                                    data-caption="Grossglockner"><img class="explore-img"
+                                        src="./images/grossglockner-1.jpg" alt="grossglockner"></a>
+                                <div class="place-names-align overlayed-text">
+                                    <span>Grossglockner</span>
+                                    <br>
+                                    <span>AUSTRIA</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="ty-compact-list" style="position: relative;">
+                                <div class="item col-sm-6 col-md-4 mb-d"></div>
+                                <a href="./images/grossglockner-1.jpg" class="fancybox" data-fancybox="gallery1"><img
+                                        class="explore-img" src="./images/grossglockner-1.jpg" alt="grossglockner"></a>
+                                <div class="place-names-align overlayed-text">
+                                    <span>Grossglockner</span>
+                                    <br>
+                                    <span>AUSTRIA</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+
+                <div class="show-more text-center mt-5 text-primary">SEE MORE</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JOURNAL AREA -->
+    <section id="journal" class="mt-5 gallery-block cards-gallery">
+        <div class="container text-light">
+            <div class="row align-items-center flex-column mt-2 mb-5">
+                <br>
+                <br>
+                <br>
+                <h4 class="mb-3" style="font-family: 'Nunito', sans-serif;">The Journal</h4>
+                <center>Our favorite stories about public lands and opportunities for you to get</center>
+                <center>involved in protecting your outdoor experiences.</center>
+            </div>
+
+            <div class="container justify-content-center">
+                <div class="row">
+                    <div class="col-md-6 col-lg-4 col-lg-6 mb-4 d-flex">
+
+                        <div class="card transform-on-hover flex-fill hoverclass cards"
+                            style="background-color: black;">
+                            <a href="./images/yosemite.jpg" class="fancybox" data-fancybox="gallery1"
+                                data-caption="30 MAY 2017"><img class="card-img-top" src="./images/img1small.png"
+                                    alt=""></a>
+
+                            <div class="card-body">
+                                <p class="card-text p-tag text-center">30 MAY 2017</p>
+                                <h5 class="card-title p-tag text-center">An Unforgattable</h5>
+                                <p class="card-text p-tag text-center">
+                                    If you only have one day to visit Yosemite National Park
+                                    and you want to make the most out of it.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-lg-6 mb-4 d-flex">
+
+                        <div class="card transform-on-hover flex-fill hoverclass cards"
+                            style="background-color: black;">
+                            <a href="./images/golden-gate.jpg" class="fancybox" data-fancybox="gallery1"
+                                data-caption="28 MAY 2017"><img class="card-img-top" src="./images/image2small.png"
+                                    alt=""></a>
+                            <div class="card-body">
+                                <p class="p-tag text-center">28 MAY 2017</p>
+                                <h5 class="card-title p-tag text-center">Symphonies in Steel</h5>
+                                <p class="card-text p-tag text-center">
+                                    Crossing the Golden Bridge from San Francisco, you
+                                    arrive in Marin even before landing on solid background.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-lg-4 col-lg-6 mb-4 d-flex">
+                        <div class="card transform-on-hover flex-fill hoverclass cards"
+                            style="background-color: black;">
+                            <a href="./images/yosemite.jpg" class="fancybox" data-fancybox="gallery1"
+                                data-caption="17 MAY 2017"><img class="card-img-top" src="./images/img1small.png"
+                                    alt=""></a>
+
+                            <div class="card-body">
+                                <p class="card-text p-tag text-center">30 MAY 2017</p>
+                                <h5 class="card-title p-tag text-center">An Unforgattable</h5>
+                                <p class="card-text p-tag text-center">
+                                    If you only have one day to visit Yosemite National Park
+                                    and you want to make the most out of it.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-lg-6 mb-4 d-flex">
+                        <div class="card transform-on-hover flex-fill hoverclass cards"
+                            style="background-color: black;">
+                            <a href="./images/golden-gate.jpg" class="fancybox" data-fancybox="gallery1"
+                                data-caption="13 MAY 2017"><img class="card-img-top" src="./images/image2small.png"
+                                    alt=""></a>
+                            <div class="card-body">
+                                <p class="p-tag text-center">28 MAY 2017</p>
+                                <h5 class="card-title p-tag text-center">Symphonies in Steel</h5>
+                                <p class="card-text p-tag text-center">
+                                    Crossing the Golden Bridge from San Francisco, you
+                                    arrive in Marin even before landing on solid background.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="all-posts text-center mt-5 text-primary">ALL POSTS</div>
+
+            <!--
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="card" style="width: 18rem; background-color: black;">
+                            <img class="card-img-top" src="./images/yosemite.jpg" alt="Yosemite">
+                            <div class="card-body">
+                                <p class="card-text" style="font-family: 'Cormorant Garamond', serif; color: white;">30
+                                    MAY,
+                                    2017
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+
+                            <div class="card" style="width: 18rem; background-color: black;">
+                                <img class="card-img-top" src="./images/golden-gate.jpg" alt="Golden Gate">
+                                <div class="card-body">
+                                    <p class="card-text"
+                                        style="font-family: 'Cormorant Garamond', serif; color: white;">28
+                                        MAY,
+                                        2017
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            -->
+    </section>
+
+    <!--FOOTER IMAGE-->
+    <section class="footer-img mb-0">
+        <div>
+            <div class="container">
+                <div class="row">
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer-sec footer mt-0">
+        <div class="container ">
+            <div class="row">
+                <div class="col text-center footer-text py-5 footer-place">
+                    <h6>&copy; THE GREAT OUTDOORS
+                        <span id="year"></span>
+                    </h6>
+                    <nav class="navbar navbar-expand-sm d-flex justify-content-between navbar-bg">
+                        <ul class="navbar-nav mx-auto" style="width: 100%; justify-content: space-around;">
+                            <li class="nav-item">
+                                <a href="#header" class="nav-link text-light footer-nav-text-size">ABOUT</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#explore" class="nav-link text-light footer-nav-text-size">EXPLORE</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#journal" class="nav-link text-light footer-nav-text-size">JOURNAL</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <!--<nav class="navbar navbar-expand-sm d-flex justify-content-between navbar-bg">
+                    <ul class="navbar-nav mx-auto" style="width: 100%; justify-content: space-around;">
+                        <li class="nav-item">
+                            <a href="#header" class="nav-link text-light">ABOUT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#explore" class="nav-link text-light">EXPLORE</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#journal" class="nav-link text-light">JOURNAL</a>
+                        </li>
+                    </ul>
+                </nav> -->
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER SECTION -->
+
+    <!-- SCRIPT FILES -->
+
+    <!--
+        CHANGE NAVBAR COLOR ON SCROLL
+    <script>
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                var scroll = $(window).scrollTop();
+                if (scroll > 300) {
+                    $(".navbar-bg").css("background", "blue");
+                }
+
+                else {
+                    $(".navbar-bg").css("background", "transparent");
+                }
+            })
+        });
+    </script>
+    -->
+
+
+    <!-- <script>$('#searchForm').on('show.bs.collapse', function () {
+            $("#search").focus()
+        }); 
+    </script> -->
+    <script>
+        $(window).scroll(function () {
+            $('nav').toggleClass('scrolled', $(this).scrollTop() > 300);
+        });
+
+        $(".fancybox").fancybox();
+
+        if ($('.ty-compact-list').length > 3) {
+            $('.ty-compact-list:gt(2)').hide();
+            $('.show-more').show();
+        }
+
+        $('.show-more').on('click', function () {
+            //toggle elements with class .ty-compact-list that their index is bigger than 2
+            $('.ty-compact-list:gt(2)').toggle();
+            //change text of show more element just for demonstration purposes to this demo
+            $(this).text() === 'SEE MORE' ? $(this).text('SEE LESS') : $(this).text('SEE MORE');
+        });
+
+        if ($('.cards').length > 1) {
+            $('.cards:gt(1)').hide();
+            $('.all-posts').show();
+        }
+
+        $('.all-posts').on('click', function () {
+            //toggle elements with class .ty-compact-list that their index is bigger than 2
+            $('.cards:gt(1)').toggle();
+            //change text of show more element just for demonstration purposes to this demo
+            $(this).text() === 'ALL POSTS' ? $(this).text('HIDE') : $(this).text('ALL POSTS');
+        });
+
+        $('#year').text(new Date().getFullYear());
+    </script>
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+        integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
